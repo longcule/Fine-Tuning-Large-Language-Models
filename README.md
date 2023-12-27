@@ -2,7 +2,7 @@
 
 ## Getting started
 
-Welcome to the Chatbot LLM (Language Model) project!
+Welcome to the Chatbot LLM (Large Language Model) project!
 To get started with the Chatbot LLM, follow the instructions below: 
 
 ## Road map
