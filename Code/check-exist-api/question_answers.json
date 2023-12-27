@@ -1,0 +1,446 @@
+[
+    {
+        "question": "Tại sao dữ liệu thu thập từ những ứng dụng trong thực tế thường chứa nhiều thông tin nhiễu và dư thừa?",
+        "answer": "Dữ liệu thu thập từ những ứng dụng trong thực tế thường chứa nhiều thông tin nhiễu và dư thừa do các biến được đo phụ thuộc vào những yếu tố chung, không rõ và thường không đo đạc được."
+    },
+    {
+        "question": "Rút gọn đặc trưng là gì?",
+        "answer": "Rút gọn đặc trưng là quá trình thu gọn hoặc biến đổi không gian biểu diễn dữ liệu ban đầu thành một tập con hoặc một không gian mới có số chiều nhỏ hơn không gian ban đầu mà vẫn giữ được các đặc tính của dữ liệu gốc."
+    },
+    {
+        "question": "Rút gọn đặc trưng giúp cải tiến hiệu năng của các thuật toán phân lớp như thế nào?",
+        "answer": "Rút gọn đặc trưng giúp cải tiến hiệu năng của các thuật toán phân lớp bằng cách giảm số chiều của tập dữ liệu ban đầu. Quá trình này có thể được thực hiện thông qua hai phương pháp là lựa chọn đặc trưng và trích xuất đặc trưng. Lựa chọn đặc trưng là quá trình chọn ra một tập con các đặc trưng từ các đặc trưng ban đầu mà không làm thay đổi giá trị của chúng. Trích xuất đặc trưng là quá trình biến đổi các đặc trưng ban đầu sang một không gian mới có chiều thấp hơn. Cả hai phương pháp này đều giúp giảm số chiều của dữ liệu, từ đó cải thiện hiệu năng của các thuật toán phân lớp."
+    },
+    {
+        "question": "Lựa chọn đặc trưng bán giám sát là quá trình sử dụng một phần thông tin nhãn lớp để lựa chọn các đặc trưng phù hợp.",
+        "answer": "Đúng"
+    },
+    {
+        "question": "Lựa chọn đặc trưng bán giám sát có lợi ích là tận dụng được lợi thế của cả dữ liệu được gán nhãn và dữ liệu không được gán nhãn.",
+        "answer": "Lựa chọn đặc trưng bán giám sát có lợi ích là tận dụng được lợi thế của cả dữ liệu được gán nhãn và dữ liệu không được gán nhãn."
+    },
+    {
+        "question": "Một số thuật toán lựa chọn đặc trưng bán giám sát đã được đề xuất và nghiên cứu.",
+        "answer": "Có một số thuật toán lựa chọn đặc trưng bán giám sát đã được đề xuất và nghiên cứu. Một số ví dụ bao gồm thuật toán lựa chọn đặc trưng tuần tự tiến (IFFS), phương pháp kết hợp tìm kiếm tabu và mạng nơ-ron xác suất, GRASP và tìm kiếm tabu, và phương pháp dựa trên tối ưu hóa."
+    },
+    {
+        "question": "Hầu hết các thuật toán lựa chọn đặc trưng bán giám sát hiện có đều dựa trên việc xây dựng ma trận tương tự và lựa chọn các đặc trưng phù hợp nhất với ma trận tương tự đó.",
+        "answer": "Đúng"
+    },
+    {
+        "question": "Ba thành phần chính của lựa chọn đặc trưng theo Liu và Motoda là gì?",
+        "answer": "Ba thành phần chính của lựa chọn đặc trưng theo Liu và Motoda là: (1) Chiến lược tìm kiếm tập con, (2) Tiêu chí đánh giá các tập con khác nhau, (3) Hướng tìm kiếm hay nguyên tắc lựa chọn, bổ sung, loại bỏ hoặc thay đổi đặc trưng trong quá trình tìm kiếm."
+    },
+    {
+        "question": "Chiến lược tìm kiếm tập con trong lựa chọn đặc trưng có thể được thực hiện như thế nào?",
+        "answer": "Chiến lược tìm kiếm tập con trong lựa chọn đặc trưng có thể được thực hiện bằng các phương pháp như tìm kiếm tiến tuần tự, tìm kiếm lùi tuần tự, tìm kiếm theo hai hướng và tìm kiếm ngẫu nhiên."
+    },
+    {
+        "question": "Hướng tìm kiếm tiến tuần tự (SFG-Sequential Forward Generation) là gì?",
+        "answer": "Hướng tìm kiếm tiến tuần tự (SFG-Sequential Forward Generation) là một phương pháp trong quá trình tìm kiếm đặc trưng, trong đó quá trình bắt đầu với một tập rỗng và tiếp tục bổ sung từng đặc trưng một vào tập con tối ưu. Mỗi lần thêm vào một đặc trưng, thuật toán sẽ đánh giá hiệu năng và quyết định xem liệu việc thêm đặc trưng đó có cải thiện kết quả hay không. Nếu có, đặc trưng được giữ lại trong tập con tối ưu, ngược lại nếu không, đặc trưng được loại bỏ. Quá trình này được lặp lại cho đến khi không thể thêm hoặc loại bỏ bất kỳ đặc trưng nào nữa."
+    },
+    {
+        "question": "Hướng tìm kiếm lùi tuần tự (SBG-Sequential Backward Generation) là gì?",
+        "answer": "Hướng tìm kiếm lùi tuần tự (SBG-Sequential Backward Generation) là một phương pháp tìm kiếm đặc trưng trong đó việc loại bỏ các đặc trưng được thực hiện theo thứ tự từ tập đặc trưng ban đầu. Quá trình tìm kiếm bắt đầu với tập đặc trưng ban đầu và sau mỗi bước, một đặc trưng được loại bỏ khỏi tập đặc trưng hiện tại. Mục tiêu của phương pháp này là tìm ra tập đặc trưng con tối ưu nhất dựa trên các tiêu chí đã được định nghĩa trước."
+    },
+    {
+        "question": "Lựa chọn đặc trưng bán giám sát là quá trình chọn ra các đặc trưng quan trọng và phù hợp nhất từ tập dữ liệu ban đầu, trong đó có thể tận dụng được lợi thế của cả dữ liệu được gán nhãn và dữ liệu không được gán nhãn.",
+        "answer": "Lựa chọn đặc trưng bán giám sát là quá trình chọn ra các đặc trưng quan trọng và phù hợp nhất từ tập dữ liệu ban đầu, trong đó có thể tận dụng được lợi thế của cả dữ liệu được gán nhãn và dữ liệu không được gán nhãn."
+    },
+    {
+        "question": "Phương pháp tạo danh sách câu hỏi RG-Random Generation hoạt động như thế nào?",
+        "answer": "Phương pháp tạo danh sách câu hỏi RG-Random Generation hoạt động bằng cách tìm kiếm và tạo ra các câu hỏi theo một hướng ngẫu nhiên. Trong quá trình tìm kiếm, việc thêm hoặc loại bỏ các đặc trưng được thực hiện một cách ngẫu nhiên. Điều này giúp tránh các tối ưu địa phương và mang lại tính ngẫu nhiên trong việc tạo ra tập câu hỏi tối ưu."
+    },
+    {
+        "question": "Tại sao SBG và SFG được coi là hai phương pháp bổ sung cho nhau?",
+        "answer": "SBG và SFG được coi là hai phương pháp bổ sung cho nhau vì đôi khi tìm ra đặc trưng quan trọng nhất là dễ dàng hơn so với tìm ra đặc trưng ít quan trọng và ngược lại. Điều này có nghĩa là SBG và SFG có thể hoạt động hiệu quả trong các tình huống khác nhau và có thể cung cấp kết quả tốt hơn khi được sử dụng cùng nhau."
+    },
+    {
+        "question": "Hướng tìm kiếm BG-Birectional Generation được áp dụng trong trường hợp nào?",
+        "answer": "Hướng tìm kiếm BG-Birectional Generation được áp dụng khi tập đặc trưng tối ưu không nằm trong khu vực giữa của không gian tìm kiếm."
+    },
+    {
+        "question": "Khi số lượng các đặc trưng liên quan n là nhỏ hơn N/2, phương pháp nào chạy nhanh hơn: SFG hay SBG?",
+        "answer": "Khi số lượng các đặc trưng liên quan n là nhỏ hơn N/2, phương pháp SFG chạy nhanh hơn."
+    },
+    {
+        "question": "Phương pháp tạo danh sách câu hỏi RG-Random Generation hoạt động như thế nào?",
+        "answer": "Phương pháp tạo danh sách câu hỏi RG-Random Generation hoạt động bằng cách tìm kiếm và thêm hoặc loại bỏ các đặc trưng một cách ngẫu nhiên. Việc tìm kiếm và thay đổi các đặc trưng không tuân theo một hướng cố định nào, giúp tránh tình trạng tối ưu địa phương và tạo ra tập đặc trưng tối ưu nhất có thể."
+    },
+    {
+        "question": "Chiến lược tìm kiếm toàn bộ là gì? Độ phức tạp không gian của nó là bao nhiêu?",
+        "answer": "Chiến lược tìm kiếm toàn bộ là một chiến lược tìm kiếm trong đó tất cả các tập con có thể có được kiểm tra. Độ phức tạp không gian của nó là O(2^N), trong đó N là số lượng đặc trưng."
+    },
+    {
+        "question": "Chiến lược tìm kiếm theo kinh nghiệm là gì? Mục tiêu của hàm đánh giá là gì?",
+        "answer": "Chiến lược tìm kiếm theo kinh nghiệm là một quá trình tìm kiếm sử dụng hàm đánh giá để hướng dẫn sự tìm kiếm. Mục tiêu của hàm đánh giá là xác định theo kinh nghiệm định hướng để tìm được tập con tối ưu."
+    },
+    {
+        "question": "Chiến lược tìm kiếm không xác định khác với hai chiến lược trước như thế nào? Khi nào nên áp dụng chiến lược này?",
+        "answer": "Chiến lược tìm kiếm không xác định khác với hai chiến lược trước đó bởi nó không tuân theo thứ tự các đặc trưng mà tìm kiếm trong không gian toàn bộ đặc trưng. Thay vào đó, nó được hướng dẫn bởi quá trình học. Chiến lược này nên được áp dụng khi không biết trước các đặc trưng nào là có ích và cần tìm kiếm trong toàn bộ không gian đặc trưng để tìm ra các đặc trưng tốt nhất cho bài toán."
+    },
+    {
+        "question": "SBG và SFG có điểm gì khác biệt?",
+        "answer": "SBG (Sequential Backward Generation) và SFG (Sequential Forward Generation) là hai phương pháp lựa chọn đặc trưng trong quá trình tìm kiếm tập đặc trưng tối ưu. SBG là phương pháp loại bỏ các đặc trưng một cách tuần tự từ tập đặc trưng ban đầu, trong khi SFG là phương pháp thêm các đặc trưng một cách tuần tự vào tập đặc trưng ban đầu. Điểm khác biệt chính giữa SBG và SFG là quá trình tìm kiếm đặc trưng quan trọng nhất. Trong SBG, đặc trưng quan trọng nhất được loại bỏ cuối cùng, trong khi trong SFG, đặc trưng quan trọng nhất được thêm vào cuối cùng."
+    },
+    {
+        "question": "Mục tiêu chính của trích xuất đặc trưng là gì?",
+        "answer": "Mục tiêu chính của trích xuất đặc trưng là giữ lại ý nghĩa ban đầu của các đặc trưng trong dữ liệu, trong khi rút gọn dữ liệu ban đầu để cải tiến hiệu năng của các thuật toán phân lớp."
+    },
+    {
+        "question": "Trích xuất đặc trưng thực hiện như thế nào để tạo ra các đặc trưng mới?",
+        "answer": "Trích xuất đặc trưng thực hiện thông qua việc áp dụng một hàm chuyển đổi để tạo ra các đặc trưng mới từ tập đặc trưng ban đầu. Các phép biến đổi được thực hiện từ đặc trưng nguồn nhằm tạo ra các đặc trưng mới để có thể dễ dàng phân tích hơn."
+    },
+    {
+        "question": "Các nhà nghiên cứu hiện nay tập trung vào việc phát triển các kỹ thuật lựa chọn đặc trưng theo hai hướng chính là gì?",
+        "answer": "Các nhà nghiên cứu hiện nay tập trung vào việc phát triển các kỹ thuật lựa chọn đặc trưng theo hai hướng chính là chiến lược tìm kiếm và tiêu chí đánh giá."
+    },
+    {
+        "question": "Chiến lược tìm kiếm trong lựa chọn đặc trưng là gì?",
+        "answer": "Chiến lược tìm kiếm trong lựa chọn đặc trưng là cách tiếp cận để tìm kiếm và chọn ra tập hợp con của các đặc trưng phù hợp cho bài toán. Có các chiến lược tìm kiếm như tìm kiếm kinh nghiệm và tham lam, tìm kiếm dựa trên tối ưu, và tìm kiếm được hướng dẫn bởi quá trình học."
+    },
+    {
+        "question": "Thuật toán lựa chọn tuần tự tiến (IFFS) được cải tiến như thế nào?",
+        "answer": "Thuật toán lựa chọn tuần tự tiến (IFFS) được cải tiến bằng cách thêm một bước tìm kiếm bổ sung được gọi là \"thay thế đặc trưng yếu\". Bước tìm kiếm bổ sung này sẽ loại bỏ một đặc trưng bất kỳ trong tập các đặc trưng con hiện đang được chọn. Sau đó, thuật toán sẽ thêm tuần tự từng đặc trưng mới một nhằm cải thiện các tập con các đặc trưng hiện thời."
+    },
+    {
+        "question": "Phương pháp lựa chọn đặc trưng kết hợp sử dụng tìm kiếm tabu và mạng nơ-ron xác suất được đề xuất bởi ai?",
+        "answer": "Phương pháp lựa chọn đặc trưng kết hợp sử dụng tìm kiếm tabu và mạng nơ-ron xác suất được đề xuất bởi Wang và cộng sự."
+    },
+    {
+        "question": "Yusta trình bày ba chiến lược tìm kiếm theo kinh nghiệm để giải quyết các bài toán lựa chọn đặc trưng là gì?",
+        "answer": "Yusta trình bày ba chiến lược tìm kiếm theo kinh nghiệm để giải quyết các bài toán lựa chọn đặc trưng là GRASP, tìm kiếm Tabu và thuật toán Memetic."
+    },
+    {
+        "question": "Kết quả so sánh giữa ba chiến lược tìm kiếm theo kinh nghiệm và các phương pháp khác như thế nào?",
+        "answer": "Kết quả so sánh giữa ba chiến lược tìm kiếm theo kinh nghiệm (GRASP, tìm kiếm Tabu và thuật toán Memetic) với các phương pháp khác như SFFS và SBFS cho thấy GRASP và tìm kiếm Tabu đạt được kết quả tốt hơn."
+    },
+    {
+        "question": "Phương pháp lựa chọn đặc trưng dựa trên tối ưu được đưa ra bởi ai?",
+        "answer": "Phương pháp lựa chọn đặc trưng dựa trên tối ưu được đưa ra bởi Kennedy và Eberhart."
+    },
+    {
+        "question": "Phương pháp lựa chọn đặc trưng dựa trên tối ưu sử dụng những gì để đưa ra quyết định?",
+        "answer": "Phương pháp lựa chọn đặc trưng dựa trên tối ưu sử dụng các thuật toán tìm kiếm và tiêu chí đánh giá để đưa ra quyết định. Cụ thể, các thuật toán tìm kiếm như tìm kiếm kinh nghiệm và tham lam, tìm kiếm tabu và các thuật toán tối ưu hóa được sử dụng để tìm kiếm tập con đặc trưng tối ưu. Các tiêu chí đánh giá được sử dụng để đánh giá chất lượng của tập con đặc trưng, bao gồm độ chính xác dự báo và thời gian thực hiện."
+    },
+    {
+        "question": "Lựa chọn đặc trưng đã được thay đổi bằng cách sử dụng hàm kinh nghiệm thay vì hàm của vết mùi.",
+        "answer": "Không có thông tin về việc lựa chọn đặc trưng đã được thay đổi bằng cách sử dụng hàm kinh nghiệm thay vì hàm của vết mùi trong tài liệu đã được đưa ra."
+    },
+    {
+        "question": "Các phương pháp lựa chọn đặc trưng thông thường gặp khó khăn khi số lượng đặc trưng lớn do đặc trưng cần được chọn một cách chính xác và hiệu quả.",
+        "answer": "Đúng. Các phương pháp lựa chọn đặc trưng thông thường gặp khó khăn khi số lượng đặc trưng lớn do cần phải chọn một cách chính xác và hiệu quả."
+    },
+    {
+        "question": "Phương pháp lai dựa trên tối ưu hóa đàn kiến và mạng nơ-ron đã sửa đổi các đại diện của nhiễm sắc thể để phù hợp với các bài toán có số lượng đặc trưng lớn.",
+        "answer": "Câu trả lời không được đưa ra trong đoạn văn trên."
+    },
+    {
+        "question": "Huang và đồng nghiệp tập trung vào việc nâng cao hiệu quả của mô hình lựa chọn đặc trưng từ hai khía cạnh khác nhau.",
+        "answer": "Huang và đồng nghiệp tập trung vào việc nâng cao hiệu quả của mô hình lựa chọn đặc trưng từ hai khía cạnh khác nhau, đó là chiến lược tìm kiếm và tiêu chí đánh giá."
+    },
+    {
+        "question": "Thuật toán lai SAGA được xây dựng dựa trên các thuật toán tối ưu hóa bầy đàn.",
+        "answer": "Không có thông tin cho câu hỏi này trong tài liệu được đưa ra."
+    },
+    {
+        "question": "Kỹ thuật tối ưu hóa đàn kiến đã được áp dụng để giải quyết bài toán lựa chọn đặc trưng bằng cách sử dụng thông tin kinh nghiệm từ việc thực hiện phân lớp và độ dài của véc tơ đặc trưng đã được chọn.",
+        "answer": "Kỹ thuật tối ưu hóa đàn kiến đã được áp dụng để giải quyết bài toán lựa chọn đặc trưng bằng cách sử dụng thông tin kinh nghiệm từ việc thực hiện phân lớp và độ dài của véc tơ đặc trưng đã được chọn."
+    },
+    {
+        "question": "Sivagaminathan và Ramakrishnan đã trình bày một thuật toán khác dựa trên tối ưu hóa đàn kiến và mạng nơ-ron để giải quyết vấn đề lựa chọn đặc trưng.",
+        "answer": "Sivagaminathan và Ramakrishnan đã trình bày một phương pháp lai dựa trên tối ưu hóa đàn kiến và mạng nơ-ron để giải quyết vấn đề lựa chọn đặc trưng."
+    },
+    {
+        "question": "Wang và cộng sự đề xuất chiến lược lựa chọn đặc trưng dựa trên tập thô và tối ưu hóa bầy đàn (PSO) như thế nào?",
+        "answer": "Wang và cộng sự đã đề xuất một chiến lược lựa chọn đặc trưng dựa trên tập thô và tối ưu hóa bầy đàn (PSO). PSO là một kỹ thuật tối ưu hóa ngẫu nhiên dựa vào dân số, trong đó mỗi giải pháp tiềm năng được xem như là một cá thể với một vận tốc nhất định bay qua không gian bài toán. So với GA, PSO không đòi hỏi các toán tử phức tạp như trao đổi chéo và đột biến mà làm cho việc tính toán tốn kém cả về bộ nhớ và thời gian chạy, nó chỉ cần các toán tử đơn giản."
+    },
+    {
+        "question": "Phương pháp phân rã và tích hợp dựa trên nguyên tắc gì?",
+        "answer": "Phương pháp phân rã và tích hợp dựa trên nguyên tắc nguyên tắc chính là sử dụng các thuật toán phân tích dữ liệu tuyến tính và phi tuyến tính để giải quyết các vấn đề trong việc rút gọn đặc trưng và phân lớp dữ liệu."
+    },
+    {
+        "question": "Tại sao phương pháp phân rã và tích hợp được sử dụng để giải quyết các bảng phức tạp?",
+        "answer": "Phương pháp phân rã và tích hợp được sử dụng để giải quyết các bảng phức tạp vì nó có thể giảm chiều dữ liệu và tìm ra các yếu tố quan trọng trong bảng. Điều này giúp cho việc phân tích và hiểu được dữ liệu trở nên dễ dàng hơn, đồng thời cung cấp thông tin quan trọng cho việc ra quyết định và đưa ra các phương pháp giải quyết vấn đề."
+    },
+    {
+        "question": "Các ứng dụng của phương pháp phân rã và tích hợp trong việc quản lý và giải quyết bảng dữ liệu là gì?",
+        "answer": "Các ứng dụng của phương pháp phân rã và tích hợp trong việc quản lý và giải quyết bảng dữ liệu bao gồm:\n- Giúp giảm chiều dữ liệu và tìm ra các đặc trưng quan trọng trong bảng dữ liệu.\n- Phát hiện các mối quan hệ giữa các biến trong bảng dữ liệu.\n- Phân tích và hiểu rõ hơn về cấu trúc và mô hình của bảng dữ liệu.\n- Tối ưu hóa và cải thiện hiệu suất của các thuật toán và mô hình dự đoán dữ liệu.\n- Hỗ trợ quyết định và đưa ra các giải pháp thông qua việc phân tích và khai thác thông tin từ bảng dữ liệu."
+    },
+    {
+        "question": "Phương pháp lựa chọn đặc trưng dựa trên nguyên tắc phân rã và tích hợp được giới thiệu bởi ai?",
+        "answer": "Phương pháp lựa chọn đặc trưng dựa trên nguyên tắc phân rã và tích hợp được giới thiệu trong tài liệu này."
+    },
+    {
+        "question": "Tại sao lựa chọn đặc trưng là một chủ đề quan trọng trong nghiên cứu ứng dụng lý thuyết phân rã và tích hợp?",
+        "answer": "Lựa chọn đặc trưng là một chủ đề quan trọng trong nghiên cứu ứng dụng lý thuyết phân rã và tích hợp vì nó có thể giúp cải thiện hiệu suất và độ chính xác của các mô hình dự đoán. Bằng cách chọn ra các đặc trưng quan trọng và loại bỏ những đặc trưng không quan trọng, ta có thể giảm chiều của dữ liệu, làm giảm độ phức tạp tính toán và giảm nguy cơ overfitting. Đồng thời, việc lựa chọn đặc trưng cũng giúp ta hiểu rõ hơn về tính chất và mối quan hệ giữa các đặc trưng trong dữ liệu, từ đó đưa ra được các kết luận và nhận định chính xác hơn."
+    },
+    {
+        "question": "Ý tưởng chính của phương pháp phân rã một bảng phức tạp thành các bảng phụ đơn giản là gì?",
+        "answer": "Ý tưởng chính của phương pháp phân rã một bảng phức tạp thành các bảng phụ đơn giản là sử dụng phân rã giá trị đơn (SVD) và phân tích thành phần chính dựa trên hàm nhân (KPCA) để giảm chiều dữ liệu ung thư và trích xuất đặc trưng từ dữ liệu đã được tiền xử lý."
+    },
+    {
+        "question": "Có những độ đo thông dụng nào trong lĩnh vực này?",
+        "answer": "Trong lĩnh vực đánh giá hiệu năng phân lớp, có một số độ đo thông dụng như:\n- Độ chính xác (accuracy): tính tỉ lệ dự đoán chính xác của mô hình trên toàn bộ số mẫu.\n- Độ nhạy (sensitivity): tính tỉ lệ mẫu mang nhãn dương được phân lớp đúng vào lớp dương trong toàn bộ số mẫu.\n- Độ đặc trưng (specificity): tính tỉ lệ những trường hợp thực sự không bị bệnh và có kết quả xét nghiệm âm tính trong toàn bộ các trường hợp bị bệnh.\n- Ma trận nhầm lẫn (confusion matrix): là một bảng chứa các thông tin về phân lớp thực tế và dự đoán cho các thuật toán phân lớp, bao gồm TP (true positive), TN (true negative), FN (false negative) và FP (false positive).\n\nCâu hỏi: Phương pháp lựa chọn đặc trưng dựa trên độ tương quan được thực hiện như thế nào?\nCâu trả lời bằng tiếng việt: Phương pháp lựa chọn đặc trưng dựa trên độ tương quan thường được thực hiện bằng cách tính toán độ tương quan giữa mỗi đặc trưng và biến mục tiêu. Kết quả của việc tính toán này sẽ cho ta biết mức độ tương quan giữa mỗi đặc trưng và biến mục tiêu. Sau đó, ta có thể xếp hạng các đặc trưng dựa trên độ tương quan và chọn ra những đặc trưng có độ tương quan cao nhất để sử dụng trong mô hình phân lớp."
+    },
+    {
+        "question": "Thuật toán cứu trợ (Relie-F) là gì và tại sao nó được coi là phổ biến?",
+        "answer": "Thuật toán cứu trợ (Relie-F) là một thuật toán lựa chọn đặc trưng phổ biến trong số các thuật toán khác do tính đơn giản và hiệu quả. Nó được sử dụng để xác định sự liên quan giữa các đặc trưng trong tập dữ liệu. Relie-F lấy mẫu ngẫu nhiên từ các nhóm dữ liệu có cùng nhãn và tính toán sự khác biệt giữa các giá trị đặc trưng của các mẫu gần nhau. Thuật toán này ước tính mức độ quan trọng của từng đặc trưng bằng cách tính trung bình của sự khác biệt này. Relie-F được coi là phổ biến vì tính đơn giản và tính ứng dụng rộng rãi trong việc lựa chọn đặc trưng."
+    },
+    {
+        "question": "Phương pháp trích xuất đặc trưng - phân tích biệt thức tuyến tính cân bằng được đề xuất bởi Wang và cộng sự để giảm chiều trong phân lớp đa nhãn.",
+        "answer": "Phương pháp trích xuất đặc trưng - phân tích biệt thức tuyến tính được đề xuất bởi Wang và cộng sự để giảm chiều trong phân lớp đa nhãn."
+    },
+    {
+        "question": "PCA là viết tắt của phân tích thành phần chính và mục đích của nó là giảm chiều dữ liệu.",
+        "answer": "Đúng. PCA là viết tắt của phân tích thành phần chính và mục đích của nó là giảm chiều dữ liệu."
+    },
+    {
+        "question": "Mô hình LDA được đề xuất để phân lớp đa nhãn dựa trên phân tích biệt thức tuyến tính.",
+        "answer": "Mô hình LDA được đề xuất để phân lớp đa nhãn dựa trên phân tích biệt thức tuyến tính."
+    },
+    {
+        "question": "ICA là viết tắt của phân tích thành phần độc lập và mục đích của nó là trích xuất các thành phần độc lập từ dữ liệu.",
+        "answer": "Đúng, ICA là viết tắt của phân tích thành phần độc lập và mục đích của nó là trích xuất các thành phần độc lập từ dữ liệu."
+    },
+    {
+        "question": "Nguyên lý của ICA được áp dụng để trích xuất đặc trưng mẫu bằng cách tách các thành phần độc lập từ dữ liệu đầu vào.",
+        "answer": "Đúng, nguyên lý của ICA được áp dụng để trích xuất đặc trưng mẫu bằng cách tách các thành phần độc lập từ dữ liệu đầu vào."
+    },
+    {
+        "question": "Đặc trưng là gì?",
+        "answer": "Đặc trưng là các thuộc tính, đặc điểm hay thông tin đại diện cho một đối tượng hoặc một tập dữ liệu. Trong quá trình trích xuất đặc trưng, ta tạo ra các đặc trưng mới từ tập đặc trưng ban đầu để dễ dàng phân tích và giảm nhiễu."
+    },
+    {
+        "question": "Có bao nhiêu hướng tiếp cận để rút gọn đặc trưng?",
+        "answer": "Có ba hướng tiếp cận để rút gọn đặc trưng."
+    },
+    {
+        "question": "Hướng tiếp cận đầu tiên để rút gọn đặc trưng là gì?",
+        "answer": "Hướng tiếp cận đầu tiên để rút gọn đặc trưng là lựa chọn ra một tập con các đặc trưng tốt nhất từ tập đặc trưng đầu vào."
+    },
+    {
+        "question": "Hướng tiếp cận thứ hai để rút gọn đặc trưng là gì?",
+        "answer": "Hướng tiếp cận thứ hai để rút gọn đặc trưng là sử dụng phương pháp tìm kiếm ngẫu nhiên (Random Generation)."
+    },
+    {
+        "question": "Trích xuất đặc trưng là gì?",
+        "answer": "Trích xuất đặc trưng là quá trình tạo ra các đặc trưng mới từ tập đặc trưng ban đầu bằng cách áp dụng một hàm chuyển đổi. Mục tiêu của trích xuất đặc trưng là tăng hiệu năng của thuật toán học, giảm nhiễu và dư thừa, cũng như trực quan hóa dữ liệu để dễ dàng phân tích. Có nhiều phương pháp trích xuất đặc trưng, bao gồm cả phương pháp có giám sát và không giám sát."
+    },
+    {
+        "question": "Bước đầu tiên trong quy trình giải quyết bài toán là gì?",
+        "answer": "Bước đầu tiên trong quy trình giải quyết bài toán là xác định mục tiêu và yêu cầu của bài toán."
+    },
+    {
+        "question": "Quá trình chuẩn bị dữ liệu trong phân tích dữ liệu bao gồm những công việc gì?",
+        "answer": "Quá trình chuẩn bị dữ liệu trong phân tích dữ liệu bao gồm các công việc như đánh giá và bổ sung giá trị bị thiếu, loại bỏ dữ liệu nhiễu, loại bỏ dữ liệu ngoại lai, chuẩn hóa và cân bằng dữ liệu."
+    },
+    {
+        "question": "Làm thế nào để xử lý giá trị thiếu trong dữ liệu?",
+        "answer": "Có một số phương pháp để xử lý giá trị thiếu trong dữ liệu. Một trong những phương pháp đơn giản là loại bỏ các bản ghi có chứa giá trị thiếu. Tuy nhiên, nếu tỷ lệ giá trị thiếu trong tập dữ liệu quá cao, việc loại bỏ các bản ghi này có thể dẫn đến mất mát dữ liệu quan trọng. Thay thế giá trị thiếu bằng giá trị trung bình hoặc giá trị trung vị của đặc trưng là một phương pháp phổ biến khác để xử lý giá trị thiếu."
+    },
+    {
+        "question": "Vấn đề phân lớp dữ liệu không cân bằng xảy ra khi nào?",
+        "answer": "Vấn đề phân lớp dữ liệu không cân bằng xảy ra khi số lượng các bản ghi trong một lớp là rất nhỏ hơn so với số lượng các bản ghi của lớp còn lại."
+    },
+    {
+        "question": "Mục đích của việc đánh giá hiệu năng trong bài toán phân lớp là gì?",
+        "answer": "Mục đích của việc đánh giá hiệu năng trong bài toán phân lớp là để đảm bảo rằng mô hình đạt được các mục tiêu đã đưa ra và kiểm tra khả năng tổng quát hóa của bộ phân lớp."
+    },
+    {
+        "question": "Phương pháp nào được sử dụng để đánh giá hiệu năng trong bài toán phân lớp?",
+        "answer": "Phương pháp được sử dụng để đánh giá hiệu năng trong bài toán phân lớp là ma trận nhầm lẫn."
+    },
+    {
+        "question": "Ma trận nhầm lẫn là gì và chứa những thông tin gì?",
+        "answer": "Ma trận nhầm lẫn là một ma trận được sử dụng để đánh giá hiệu suất của một thuật toán phân loại. Ma trận này chứa thông tin về số lượng các điểm dữ liệu được phân loại đúng và sai. Cụ thể, ma trận nhầm lẫn bao gồm các thông số như true positive (TP), false positive (FP), true negative (TN) và false negative (FN), từ đó có thể tính toán được các chỉ số đánh giá như độ chính xác (accuracy), độ nhạy (recall), độ chính xác dương tính (precision) và F1-score."
+    },
+    {
+        "question": "Làm thế nào để tính độ chính xác trong bài toán phân lớp?",
+        "answer": "Để tính độ chính xác trong bài toán phân lớp, ta sử dụng công thức sau:\n\nĐộ chính xác = (TP + TN) / (TP + TN + FP + FN)\n\nTrong đó:\n- TP (true positive) là số lượng mẫu mang nhãn dương được phân lớp đúng vào lớp dương.\n- TN (true negative) là số lượng mẫu mang nhãn âm được phân lớp đúng vào lớp âm.\n- FP (false positive) là số lượng mẫu mang nhãn âm bị phân lớp sai vào lớp dương.\n- FN (false negative) là số lượng mẫu mang nhãn dương bị phân lớp sai vào lớp âm.\n\nCông thức trên tính tỷ lệ số lượng mẫu được phân lớp đúng (TP và TN) trên tổng số lượng mẫu (TP, TN, FP và FN)."
+    },
+    {
+        "question": "Độ nhạy là gì và nó thể hiện điều gì trong mô hình phân lớp?",
+        "answer": "Độ nhạy (sensitivity) là một độ đo được sử dụng trong mô hình phân lớp để đánh giá khả năng của mô hình trong phát hiện các mẫu thuộc lớp dương. Nó được tính bằng tỷ lệ giữa số lượng mẫu dương được phân loại đúng và tổng số mẫu dương có sẵn trong tập kiểm thử. Độ nhạy càng cao, mô hình càng có khả năng phát hiện đúng các mẫu thuộc lớp dương."
+    },
+    {
+        "question": "Ví dụ về việc sử dụng độ nhạy trong bài toán phát hiện người bị bệnh.",
+        "answer": "Một ví dụ về việc sử dụng độ nhạy trong bài toán phát hiện người bị bệnh là trong bài toán xét nghiệm ung thư. Độ nhạy được sử dụng để đánh giá khả năng phát hiện chính xác của mô hình trong việc phân loại các mẫu là có bị ung thư hay không. Nếu độ nhạy đạt 100%, có nghĩa là toàn bộ những người mắc bệnh ung thư đều được phát hiện. Điều này rất quan trọng để cung cấp các biện pháp sàng lọc sớm và điều trị kịp thời cho những người bị bệnh."
+    },
+    {
+        "question": "Phương pháp kiểm chứng chéo 5 lần được mô tả như thế nào trong đoạn văn?",
+        "answer": "Phương pháp kiểm chứng chéo 5 lần được mô tả là chia tập dữ liệu thành 5 phần bằng nhau. Trong đó, mỗi lần chạy, một phần được giữ lại để kiểm thử và 4 phần còn lại được sử dụng để huấn luyện. Quá trình này được lặp lại cho đến khi tất cả các phần được sử dụng và kết quả được tính trung bình cộng để có một kết quả duy nhất."
+    },
+    {
+        "question": "Tại sao phương pháp kiểm chứng chéo 5 lần được sử dụng?",
+        "answer": "Phương pháp kiểm chứng chéo 5 lần được sử dụng để đánh giá hiệu năng của một mô hình dự đoán trên dữ liệu. Bằng cách chia tập dữ liệu thành 5 phần bằng nhau, mô hình được huấn luyện và đánh giá trên mỗi phần một lần. Quá trình này được lặp lại 5 lần, trong mỗi lần một phần khác nhau được giữ lại để kiểm thử. Kết quả cuối cùng được tính trung bình cộng để có một kết quả duy nhất. Phương pháp này giúp đảm bảo tính khách quan và đáng tin cậy trong việc đánh giá hiệu năng của mô hình trên dữ liệu."
+    },
+    {
+        "question": "Quy trình rút gọn đặc trưng được thực hiện sau các công việc nào?",
+        "answer": "Quy trình rút gọn đặc trưng được thực hiện sau các công việc thu thập dữ liệu và tiền xử lý dữ liệu."
+    },
+    {
+        "question": "Có bao nhiêu phương pháp lựa chọn đặc trưng được đề cập trong đoạn văn?",
+        "answer": "Có ba phương pháp lựa chọn đặc trưng được đề cập trong đoạn văn."
+    },
+    {
+        "question": "Luận án tập trung vào quy trình lựa chọn đặc trưng nào?",
+        "answer": "Luận án tập trung vào quy trình lựa chọn đặc trưng có giám sát."
+    },
+    {
+        "question": "Quy trình lựa chọn đặc trưng được chia thành bao nhiêu pha? Đó là những pha nào?",
+        "answer": "Quy trình lựa chọn đặc trưng được chia thành hai pha: pha huấn luyện và pha kiểm thử."
+    },
+    {
+        "question": "Thuật toán nào được đề cập là một trong những thuật toán phân lớp đơn giản nhất và thường được sử dụng trong các bài toán thực tế?",
+        "answer": "Thuật toán k-láng giềng gần nhất (k-NN) là một trong những thuật toán phân lớp đơn giản nhất và thường được sử dụng trong các bài toán thực tế."
+    },
+    {
+        "question": "Thuật toán Naïve Bayes dựa trên giả định của ai?",
+        "answer": "Thuật toán Naïve Bayes dựa trên giả định của ElAlami [30]."
+    },
+    {
+        "question": "Thuật toán SVM sử dụng không gian giả thuyết các hàm tuyến tính trên không gian đặc trưng nhiều chiều để phân lớp.",
+        "answer": "Đúng. Thuật toán SVM sử dụng không gian giả thuyết các hàm tuyến tính trên không gian đặc trưng nhiều chiều để phân lớp."
+    },
+    {
+        "question": "Để thực hiện thuật toán SVM, cần xác định tham số K như thế nào?",
+        "answer": "Để thực hiện thuật toán SVM, cần xác định tham số K bằng cách lựa chọn số lỗi trong một tập con xác nhận làm thước đo để quyết định đặc trưng nào bị loại bỏ trong mỗi lần lặp."
+    },
+    {
+        "question": "Khoảng cách Ơ cờ lít được sử dụng trong thuật toán SVM để tính khoảng cách như thế nào?",
+        "answer": "Khoảng cách Ơ cờ lít được sử dụng trong thuật toán SVM để tính khoảng cách bằng cách tính toán tổng giá trị tuyệt đối của hiệu giữa các điểm dữ liệu."
+    },
+    {
+        "question": "Thuật toán k-NN có những ưu điểm gì?",
+        "answer": "Thuật toán k-láng giềng gần nhất (k-NN) có những ưu điểm sau:\n- Đơn giản, dễ hiểu và dễ cài đặt.\n- Khả năng phân lớp tốt với dữ liệu có cấu trúc phức tạp.\n- Khả năng xử lý được cả dữ liệu rời rạc và dữ liệu liên tục.\n- Khả năng chịu lỗi và chịu nhiễu, phù hợp với các ứng dụng thực tế.\n- Không có khả năng phân tích dữ liệu để tìm ra các thông tin có giá trị.\n- Độ chính xác tương đối cao trong các bài toán phân lớp.\n- Khả năng học từ dữ liệu và khái quát hóa các tình huống mới.\n- Có thể dễ dàng kiểm chứng lại kết quả dự đoán bằng cách thống kê."
+    },
+    {
+        "question": "Quy trình trích xuất đặc trưng trong văn bản bao gồm việc sử dụng các thuật toán ICA để giảm thiểu thông tin tương hỗ và tối đa hóa phân phối chuẩn. Các đặc trưng ban đầu trong văn bản được chuyển đổi thành các thành phần chính tuyến tính không tương quan.",
+        "answer": "Quy trình trích xuất đặc trưng trong văn bản bao gồm việc sử dụng các thuật toán ICA để giảm thiểu thông tin tương hỗ và tối đa hóa phân phối chuẩn. Các đặc trưng ban đầu trong văn bản được chuyển đổi thành các thành phần chính tuyến tính không tương quan."
+    },
+    {
+        "question": "Việc sử dụng kỹ thuật trích xuất đặc trưng trong văn bản hiệu quả hơn so với kỹ thuật lựa chọn đặc trưng khi dữ liệu thường được phân phối và các thành phần chính là độc lập.",
+        "answer": "Không có thông tin trong tài liệu cho biết việc sử dụng kỹ thuật trích xuất đặc trưng trong văn bản hiệu quả hơn so với kỹ thuật lựa chọn đặc trưng khi dữ liệu thường được phân phối và các thành phần chính là độc lập."
+    },
+    {
+        "question": "Phân tích biệt thức tuyến tính (LDA) trong văn bản là một phương pháp khác để trích xuất đặc trưng, nhưng không được đề cập trong đoạn văn.",
+        "answer": "Đúng, phân tích biệt thức tuyến tính (LDA) không được đề cập trong đoạn văn."
+    },
+    {
+        "question": "Phân tích thành phần độc lập (ICA) trong văn bản là một phương pháp trích xuất đặc trưng, được chia thành hai loại thuật toán: giảm thiểu thông tin tương hỗ và tối đa hóa phân phối chuẩn.",
+        "answer": "Phân tích thành phần độc lập (ICA) là một phương pháp thống kê dùng để chuyển đổi một véc tơ đa chiều sang các thành phần độc lập. ICA có thể được chia thành hai loại thuật toán: giảm thiểu thông tin tương hỗ và tối đa hóa phân phối chuẩn."
+    },
+    {
+        "question": "FA được sử dụng trong những lĩnh vực nào?",
+        "answer": "FA được sử dụng trong nhiều lĩnh vực khác nhau như khai thác dữ liệu, phân tích tín dụng, nhận dạng khuôn mặt, phân tích hình ảnh, và nhiều lĩnh vực khác."
+    },
+    {
+        "question": "FA có những ưu điểm gì?",
+        "answer": "FA có những ưu điểm sau:\n- FA có thể khai thác mối quan hệ giữa các biến và yếu tố chung không rõ và không đo đạc được.\n- FA có thể giảm chiều của tập dữ liệu theo một mô hình yếu tố, giúp tăng hiệu suất tính toán và giảm độ phức tạp của dữ liệu.\n- FA có thể được sử dụng để phân tích và hiểu sâu về mối quan hệ giữa các biến và yếu tố chung.\n- FA có thể áp dụng cho nhiều lĩnh vực khác nhau, như tài chính, tâm lý học, y học, giáo dục, v.v.\n- FA có thể giúp cải thiện hiệu suất và kết quả của các phương pháp khác, như phân loại, dự báo và khám phá dữ liệu."
+    },
+    {
+        "question": "Quy trình khai phá dữ liệu được giới thiệu trong luận án có mục tiêu gì?",
+        "answer": "Quy trình khai phá dữ liệu được giới thiệu trong luận án có mục tiêu là cải tiến hiệu năng của các thuật toán phân lớp."
+    },
+    {
+        "question": "Tại sao mạng nơ-ron nhân tạo và máy véc tơ hỗ trợ (SVM) được sử dụng trong bài toán cho điểm tín dụng?",
+        "answer": "Mạng nơ-ron nhân tạo (ANN) và máy véc tơ hỗ trợ (SVM) được sử dụng trong bài toán cho điểm tín dụng vì các phương pháp này có khả năng học từ dữ liệu và tìm ra các mẫu phân loại phức tạp. ANN có khả năng học từ những kinh nghiệm tích lũy và sử dụng tri thức đó để dự đoán dữ liệu chưa biết. SVM sử dụng không gian giả thuyết các hàm tuyến tính để phân chia dữ liệu. Cả hai phương pháp đều có khả năng xử lý dữ liệu kiểu số và kiểu phân loại hoặc văn bản, giúp cải thiện độ chính xác của bài toán phân lớp cho điểm tín dụng."
+    },
+    {
+        "question": "Tại sao việc đánh giá mức độ tín nhiệm của khách hàng theo cách truyền thống gây tốn kém về thời gian và nguồn lực?",
+        "answer": "Việc đánh giá mức độ tín nhiệm của khách hàng theo cách truyền thống gây tốn kém về thời gian và nguồn lực vì các phương pháp này thường dựa vào ý chủ quan của các nhân viên tín dụng ngân hàng."
+    },
+    {
+        "question": "Tại sao việc xây dựng và áp dụng các mô hình tính toán có sự hỗ trợ của máy tính trong lĩnh vực cho điểm tín dụng là cần thiết?",
+        "answer": "Việc xây dựng và áp dụng các mô hình tính toán có sự hỗ trợ của máy tính trong lĩnh vực cho điểm tín dụng là cần thiết vì:\n\n1. Hiệu năng: Các mô hình tính toán có thể xử lý và phân tích lượng lớn dữ liệu một cách nhanh chóng và hiệu quả. Điều này giúp ngân hàng và các tổ chức tài chính có thể đánh giá và xếp hạng khách hàng một cách tự động và chính xác.\n\n2. Dự báo rủi ro: Các mô hình tính toán có thể dự đoán và đo lường rủi ro tín dụng của khách hàng dựa trên thông tin tài chính và phi tài chính đã có. Điều này giúp ngân hàng và các tổ chức tài chính có thể đưa ra quyết định cho vay và quản lý rủi ro tín dụng một cách hiệu quả.\n\n3. Tự động hóa: Việc sử dụng máy tính và các mô hình tính toán trong cho điểm tín dụng giúp tự động hóa quy trình đánh giá và xếp hạng khách hàng. Điều này giúp tiết kiệm thời gian và công sức cho các cán bộ tín dụng và đảm bảo tính nhất quán và khách quan trong quá trình đánh giá.\n\n4. Độ chính xác: Các mô hình tính toán có khả năng đưa ra dự đoán với độ chính xác cao dựa trên phân tích dữ liệu và mối quan hệ giữa các đặc trưng của khách hàng. Điều này giúp ngân hàng và các tổ chức tài chính đưa ra quyết định tốt hơn về việc cho vay và quản lý rủi ro tín dụng.\n\nTóm lại, việc xây dựng và áp dụng các mô hình tính toán có sự hỗ trợ của máy tính trong lĩnh vực cho điểm tín dụng là cần thiết để cải thiện hiệu năng, dự báo rủi ro, tự động hóa và đảm bảo độ chính xác trong quá trình đánh giá và xếp hạng khách hàng."
+    },
+    {
+        "question": "Tại sao các mô hình tính toán có thể loại bỏ các nhân tố chủ quan trong quá trình cho điểm tín dụng?",
+        "answer": "Các mô hình tính toán có thể loại bỏ các nhân tố chủ quan trong quá trình cho điểm tín dụng bởi vì chúng dựa vào các phương pháp thống kê và tính toán mà không phụ thuộc vào ý chủ quan của nhân viên tín dụng ngân hàng."
+    },
+    {
+        "question": "Tại sao độ chính xác dự đoán và mức độ tin cậy của các mô hình cho điểm tín dụng hiện tại chưa cao?",
+        "answer": "Độ chính xác dự đoán và mức độ tin cậy của các mô hình cho điểm tín dụng hiện tại chưa cao do một số nguyên nhân sau:\n\n1. Dữ liệu không đầy đủ: Các mô hình cho điểm tín dụng dựa trên dữ liệu đã có của khách hàng. Nếu dữ liệu không đầy đủ hoặc thiếu thông tin quan trọng, mô hình sẽ không đưa ra dự đoán chính xác.\n\n2. Noise và outlier: Nếu có nhiễu hoặc giá trị ngoại lệ trong dữ liệu, mô hình có thể bị ảnh hưởng và đưa ra dự đoán không chính xác. Việc lọc và xử lý các giá trị ngoại lệ trước khi đưa vào mô hình là rất quan trọng.\n\n3. Mô hình chưa phù hợp: Các mô hình cho điểm tín dụng cần được xây dựng và điều chỉnh phù hợp với từng loại khách hàng và doanh nghiệp. Nếu mô hình không phù hợp hoặc không được huấn luyện đúng cách, dự đoán sẽ không chính xác.\n\n4. Sự thay đổi trong tình hình tài chính: Mô hình cho điểm tín dụng dựa trên thông tin tài chính hiện tại của khách hàng. Nếu tình hình tài chính thay đổi nhanh chóng, mô hình có thể không kịp cập nhật và đưa ra dự đoán chính xác.\n\n5. Mô hình không tính đến yếu tố phi tài chính: Mô hình cho điểm tín dụng dựa trên thông tin tài chính đã có. Tuy nhiên, nhiều yếu tố phi tài chính như hành vi tiêu dùng, thói quen thanh toán, hoặc thông tin xã hội cũng có thể ảnh hưởng đến khả năng trả nợ của khách hàng. Nếu mô hình không tính đến những yếu tố này, dự đoán có thể không chính xác.\n\nTóm lại, độ chính xác dự đoán và mức độ tin cậy của các mô hình cho điểm tín dụng hiện tại chưa cao do các nguyên nhân như dữ liệu không đầy đủ, noise và outlier, mô hình chưa phù hợp, sự thay đổi trong tình hình tài chính, và sự bỏ qua yếu tố phi tài chính."
+    },
+    {
+        "question": "Tại sao lĩnh vực cho điểm tín dụng đã trở thành một chủ đề được nghiên cứu rộng rãi?",
+        "answer": "Lĩnh vực cho điểm tín dụng đã trở thành một chủ đề được nghiên cứu rộng rãi vì nó là một vấn đề quan trọng đối với các ngân hàng thương mại. Việc đánh giá mức độ tín nhiệm của khách hàng một cách truyền thống gây tốn kém về thời gian và nguồn lực, và thường dựa vào ý chủ quan của các nhân viên tín dụng ngân hàng. Việc xây dựng và áp dụng các mô hình tính toán có sự hỗ trợ của máy tính có thể loại bỏ các nhân tố chủ quan trong quá trình cho điểm và đưa ra quyết định cho vay một cách chính xác hơn. Do đó, các nhà nghiên cứu đã nghiên cứu và đề xuất nhiều mô hình cho điểm tín dụng sử dụng các phương pháp thống kê và trí tuệ nhân tạo để cải thiện độ chính xác và mức độ tin cậy của việc đánh giá tín nhiệm khách hàng."
+    },
+    {
+        "question": "Mô hình cho điểm tín dụng được sử dụng bởi ngân hàng thương mại để dự đoán khả năng tín dụng của khách hàng trong tương lai.",
+        "answer": "Mô hình cho điểm tín dụng được sử dụng bởi ngân hàng thương mại để dự đoán khả năng tín dụng của khách hàng trong tương lai."
+    },
+    {
+        "question": "Đánh giá rủi ro tín dụng dựa trên việc sử dụng dữ liệu đã có của khách hàng.",
+        "answer": "Đánh giá rủi ro tín dụng dựa trên việc sử dụng dữ liệu đã có của khách hàng là một phương pháp quan trọng trong quản lý tín dụng khách hàng cá nhân của các ngân hàng thương mại. Việc xây dựng và áp dụng các mô hình tính toán có sự hỗ trợ của máy tính giúp loại bỏ các yếu tố chủ quan trong quá trình cho điểm tín dụng và đưa ra khuyến nghị cho ngân hàng về việc cho vay hay không và khả năng hoàn trả tiền vay. Tuy nhiên, việc đánh giá rủi ro tín dụng còn chưa đạt độ chính xác cao và độ tin cậy để hỗ trợ quyết định cho vay. Nghiên cứu trong lĩnh vực cho điểm tín dụng đã đề xuất và phát triển nhiều mô hình sử dụng các phương pháp thống kê và trí tuệ nhân tạo để cải thiện độ chính xác dự đoán và mức độ tin cậy. Tuy nhiên, dữ liệu tài chính và dữ liệu tín dụng thường chứa thông tin không liên quan và dư thừa, gây giảm độ chính xác phân lớp và đưa ra quyết định không chính xác. Do đó, lựa chọn đặc trưng là một phương pháp tốt nhằm loại bỏ thông tin dư thừa và rút ngắn thời gian phân tích dữ liệu."
+    },
+    {
+        "question": "Mức độ rủi ro tín dụng phụ thuộc vào mối quan hệ giữa các thông tin đã có.",
+        "answer": "Đúng. Mức độ rủi ro tín dụng phụ thuộc vào mối quan hệ giữa các thông tin đã có."
+    },
+    {
+        "question": "Mục tiêu chính của nghiên cứu này là gì?",
+        "answer": "Mục tiêu chính của nghiên cứu này là khai thác mối quan hệ giữa các biến và tìm hiểu tính chất của dữ liệu để giảm chiều của tập dữ liệu theo một mô hình yếu tố."
+    },
+    {
+        "question": "Quy trình lựa chọn đặc trưng được thực hiện như thế nào trong nghiên cứu này?",
+        "answer": "Trong nghiên cứu này, quy trình lựa chọn đặc trưng được thực hiện theo phương pháp lựa chọn đặc trưng có giám sát. Quy trình này được chia thành hai pha là pha huấn luyện và pha kiểm thử. Trong pha huấn luyện, các thuật toán phân lớp được huấn luyện sử dụng tập con các đặc trưng được lựa chọn bởi phương pháp lựa chọn đặc trưng. Có thể sử dụng phương pháp lọc hoặc phương pháp đóng gói để lựa chọn đặc trưng. Trong quá trình này, một số thuật toán phân lớp như Naïve Bayes có thể được sử dụng. Trong pha kiểm thử, bộ phân lớp đã được huấn luyện sẽ sử dụng các đặc trưng được lựa chọn để dự đoán nhãn lớp của các mẫu trong tập kiểm thử."
+    },
+    {
+        "question": "Tại sao bộ dữ liệu tín dụng của Đức không được cân bằng?",
+        "answer": "Bộ dữ liệu tín dụng của Đức không được cân bằng vì tỷ lệ phân phối mẫu thuộc lớp tốt và lớp xấu không đều. Cụ thể, bộ dữ liệu này có 700 trường hợp của ứng viên có mức tín dụng tốt và chỉ có 300 trường hợp người nộp đơn bị từ chối."
+    },
+    {
+        "question": "Phương pháp đóng gói sử dụng chiến lược tìm kiếm toàn bộ với hai hướng tìm kiếm là gì?",
+        "answer": "Phương pháp đóng gói sử dụng chiến lược tìm kiếm toàn bộ với hai hướng tìm kiếm là tiến và lùi."
+    },
+    {
+        "question": "Tại sao phương pháp đóng gói thường sử dụng độ chính xác dự đoán làm tiêu chí đánh giá đặc trưng?",
+        "answer": "Phương pháp đóng gói thường sử dụng độ chính xác dự đoán làm tiêu chí đánh giá đặc trưng vì nó đo lường khả năng của thuật toán học trong dự đoán hoặc phân lớp một cách chính xác. Độ chính xác dự đoán là một độ đo quan trọng để đánh giá hiệu suất của thuật toán và xác định xem liệu nó có thể được sử dụng trong các ứng dụng thực tế hay không."
+    },
+    {
+        "question": "Vì sao phương pháp đóng gói có thể bị \"quá khớp\"?",
+        "answer": "Phương pháp đóng gói có thể bị \"quá khớp\" vì nó có thể không lựa chọn được các đặc trưng \"hữu ích\" nhất. Điều này có nghĩa là nó có thể chọn những đặc trưng không quan trọng hoặc không có ý nghĩa trong việc dự đoán kết quả, dẫn đến mô hình chỉ hoạt động tốt trên dữ liệu huấn luyện mà không thể tổng quát hóa cho dữ liệu mới."
+    },
+    {
+        "question": "Cải tiến hàm đánh giá đặc trưng sử dụng kiểm chứng chéo n lần trong các phương pháp đề xuất như thế nào?",
+        "answer": "Cải tiến hàm đánh giá đặc trưng sử dụng kiểm chứng chéo n lần trong các phương pháp đề xuất bằng cách chia tập dữ liệu thành n tập mẫu con bằng nhau. Một phần mẫu con được giữ lại để thử nghiệm và n-1 phần còn lại được sử dụng để huấn luyện. Quá trình này được lặp lại n lần, trong mỗi lần sử dụng một phần khác nhau để thử nghiệm. Kết quả cuối cùng được tính trung bình cộng để có kết quả đánh giá hiệu năng đặc trưng."
+    },
+    {
+        "question": "Chiến lược lựa chọn đặc trưng tiến sử dụng phương pháp tìm kiếm tiến như thế nào?",
+        "answer": "Chiến lược lựa chọn đặc trưng tiến sử dụng phương pháp tìm kiếm bằng cách thêm một bước tìm kiếm bổ sung được gọi là \"thay thế đặc trưng yếu\". Bước tìm kiếm bổ sung này sẽ thực hiện việc loại bỏ một đặc trưng bất kỳ trong tập các đặc trưng con hiện đang được chọn. Sau đó thêm tuần tự từng đặc trưng mới một nhằm cải thiện các tập con các đặc trưng hiện thời."
+    },
+    {
+        "question": "Thuật toán lựa chọn đặc trưng dựa trên phương pháp đóng gói được mô tả như thế nào?",
+        "answer": "Phương pháp lựa chọn đặc trưng dựa trên phương pháp đóng gói có thể được mô tả như sau: Mô hình đóng gói luôn \"bao quanh\" bộ phân lớp và sử dụng phản hồi từ mô hình dự đoán để đánh giá chất lượng của tập đặc trưng. Mô hình này có thể sử dụng các chiến lược tìm kiếm khác nhau như tìm kiếm tuần tự, ngẫu nhiên hoặc thuật toán di truyền. Mô hình đóng gói có ưu điểm là có thể đảm bảo tìm được tập con các đặc trưng tối ưu. Tuy nhiên, nó cũng có nhược điểm là độ phức tạp tính toán và thời gian thực hiện lớn, hạn chế trong việc chọn lựa bộ phân lớp và khả năng xử lý với các bộ dữ liệu có kích cỡ lớn."
+    },
+    {
+        "question": "Công thức tính điểm số Fjscore[l] trong thuật toán lựa chọn đặc trưng là gì?",
+        "answer": "Công thức tính điểm số Fjscore[l] trong thuật toán lựa chọn đặc trưng là Fjscore[l] = Fj,k × (Aklearn + Akvalidation) nếu n = 1."
+    },
+    {
+        "question": "Độ chính xác huấn luyện và độ chính xác kiểm thử có quan hệ như thế nào với độ tốt của đặc trưng?",
+        "answer": "Độ chính xác huấn luyện và độ chính xác kiểm thử có thể cho thấy mức độ hiệu quả của đặc trưng được lựa chọn. Nếu độ chính xác huấn luyện và độ chính xác kiểm thử tăng lên cùng một mức độ, điều này có thể cho thấy đặc trưng được lựa chọn là có ích và tốt cho bộ phân lớp. Tuy nhiên, nếu độ chính xác huấn luyện cao nhưng độ chính xác kiểm thử thấp, điều này có thể cho thấy đặc trưng được lựa chọn có thể gây overfitting và không tốt cho khả năng dự đoán trên dữ liệu mới. Ngược lại, nếu độ chính xác huấn luyện thấp nhưng độ chính xác kiểm thử cao, đặc trưng được lựa chọn có thể không đủ mạnh để phân loại dữ liệu huấn luyện nhưng vẫn có khả năng dự đoán tốt trên dữ liệu mới. Do đó, độ chính xác huấn luyện và độ chính xác kiểm thử là những chỉ số quan trọng để đánh giá độ tốt của đặc trưng."
+    },
+    {
+        "question": "Tại sao độ chính xác huấn luyện và độ chính xác kiểm thử chưa đủ để đảm bảo tính ổn định của thuật toán?",
+        "answer": "Độ chính xác huấn luyện và độ chính xác kiểm thử chỉ đánh giá hiệu suất của thuật toán trên dữ liệu đã được sử dụng trong quá trình huấn luyện và kiểm thử. Tuy nhiên, tính ổn định của thuật toán không chỉ phụ thuộc vào dữ liệu đã được sử dụng trong quá trình huấn luyện và kiểm thử mà còn phụ thuộc vào dữ liệu mới mà thuật toán chưa từng gặp. Do đó, độ chính xác huấn luyện và độ chính xác kiểm thử chưa đủ để đảm bảo tính ổn định của thuật toán."
+    },
+    {
+        "question": "Hàm findBestLoc() được sử dụng để làm gì?",
+        "answer": "Hàm findBestLoc() được sử dụng để tìm vị trí của đặc trưng có điểm số Fjscore cao nhất và độ lệch chuẩn thấp nhất trong quá trình lựa chọn đặc trưng."
+    },
+    {
+        "question": "Các luật lựa chọn trong hàm findBestLoc() được sắp xếp theo thứ tự ưu tiên như thế nào?",
+        "answer": "Các luật lựa chọn trong hàm findBestLoc() được sắp xếp theo thứ tự ưu tiên từ cao đến thấp."
+    },
+    {
+        "question": "Luật 1 trong hàm findBestLoc() tìm ra vị trí của các đặc trưng nào?",
+        "answer": "Luật 1 trong hàm findBestLoc() tìm ra vị trí của các đặc trưng có điểm số trung vị cao nhất."
+    },
+    {
+        "question": "Luật 2 trong hàm findBestLoc() tìm ra vị trí của các đặc trưng nào?",
+        "answer": "Luật 2 trong hàm findBestLoc() tìm ra vị trí của các đặc trưng có điểm số trung bình Fjscore cao nhất."
+    }
+]

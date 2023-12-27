@@ -1,0 +1,6 @@
+[
+{
+        "question": "Mỗi cây trong tập hợp của Random Forest được đào tạo trên những gì?",
+        "answer": "Mỗi cây trong tập hợp của Random Forest được đào tạo trên một tập con ngẫu nhiên của dữ liệu và một tập con ngẫu nhiên của các đặc trưng."
+    }
+]
